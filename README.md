@@ -1,7 +1,7 @@
 # Mock_project
 Đây là project về lọc nhiễu tiếng ồn trong đoạn hội thoại
 -----
-Getting the weights
+Download model
 -----
 
 | Model  | Description |  Link to the model | 
