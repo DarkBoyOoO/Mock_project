@@ -11,3 +11,5 @@ Download model
 | Wav2Lip teacher  |Weights of the teacher lipsync model (only needed if you want to train the network from scratch) | [Link](https://drive.google.com/file/d/1K-PF-cDD6jFyM2Lj5OvhmYdKvX5qAHZ7/view?usp=sharing)  |
 
 ---
+Model denoising và wav2lip sẽ được lưu trữ tại Mock/model
+Model lipsync student sẽ lưu trữ tại Mock/lipsync/model
