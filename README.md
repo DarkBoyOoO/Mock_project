@@ -12,6 +12,5 @@ Download model
 
 ---
 Model denoising và wav2lip sẽ được lưu trữ tại Mock/model
-----
+
 Model lipsync student sẽ lưu trữ tại Mock/lipsync/model
-----
