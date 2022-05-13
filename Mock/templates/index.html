@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Denoise</title>
+  {{ dropzone.load_css() }}
+  {{ dropzone.style('border: 3px dashed #0087F7; margin-left: 30%; margin-top: 2%; height: 200px; width: 600px') }}
+</head>
+
+<style>
+.loader {
+  text-align: center;
+  margin-top: 2%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+.demo {
+display: none
+}
+.show {
+display: block
+}
+</style>
+
+
+
+<body>
+	<div style="color:blue;text-align:center; font-size: 40px">
+	    SEGMENT SPEECH FROM NOISE
+    </div>
+
+  {{ dropzone.create(action='upload') }}
+  {{ dropzone.load_js() }}
+  {{ dropzone.config() }}
+
+    <form action="/result" method="POST">
+
+        <button class="button" type="submit" value="Submit" onclick="myFunction()" style="margin-left: 46%; margin-top: 2%; vertical-align:middle; height:50px; width:100px; background-color:#0000FF">
+            <span style="color:#FFFFFF">
+                Convert
+            </span>
+        </button>
+        <div class="demo" id="hide" style="margin-left: 46%; margin-top: 2%">
+            Please waiting...
+        </div>
+        <div class="demo" id="load" style="margin-left: 44%; margin-top: 2%"></div>
+        <script>
+            function myFunction() {
+            if ( document.getElementById("load").classList.contains('demo') ){
+              document.getElementById("load").classList.remove('demo');
+              document.getElementById("load").classList.add('loader');
+              }
+            else
+              document.getElementById("load").classList.add('demo');
+
+            if ( document.getElementById("hide").classList.contains('demo') ){
+              document.getElementById("hide").classList.remove('demo');
+              document.getElementById("hide").classList.add('show');
+              }
+            else
+  	          document.getElementById("hide").classList.add('demo');
+            }
+        </script>
+    </form>
+
+</body>
+</html>
+
