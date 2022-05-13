@@ -36,4 +36,3 @@ Data được dùng là 2 tập data [LRS3](https://www.robots.ox.ac.uk/~vgg/dat
 
 - Paper: https://openaccess.thecvf.com/content/WACV2021/papers/Hegde_Visual_Speech_Enhancement_Without_a_Real_Visual_Stream_WACV_2021_paper.pdf
 
-- Video demo: https://www.youtube.com/watch?v=y_oP9t7WEn4&feature=youtu.be
