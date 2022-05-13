@@ -31,6 +31,8 @@ Data được dùng là 2 tập data [LRS3](https://www.robots.ox.ac.uk/~vgg/dat
 # Using
 Để tiến hành dùng, chạy file `deploy.py` và làm theo hướng dẫn trong slide báo cáo.
 
+Kết quả sẽ được lưu vào Mock/results
+
 # Reference
 - Github: https://github.com/Sindhu-Hegde/pseudo-visual-speech-denoising
 
